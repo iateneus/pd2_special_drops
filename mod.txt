@@ -1,0 +1,26 @@
+{
+  "name": "Special Enemy Drops",
+  "description": "Special enemies drop extra resources.",
+  "author": "iateneus",
+  "image": "thumb.png",
+  "version": "0.6",
+  "updates": [
+  {
+    "identifier": "pd2_special_drops",
+    "host": {
+      "meta": "https://raw.githubusercontent.com/iateneus/pd2_special_drops/main/meta.json"
+    }
+  }
+],
+
+  "hooks": [
+  {
+    "hook_id": "lib/units/enemies/cop/copdamage",
+    "script_path": "lua/copdamage.lua"
+  },
+  {
+    "hook_id": "lib/units/equipment/grenade_crate/grenadecratebase",
+    "script_path": "lua/grenadecrate.lua"
+  }
+]
+}
